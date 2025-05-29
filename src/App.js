@@ -83,7 +83,7 @@ function App() {
 
   return (
     <div className="container">
-      <h2>📄 Restaurant Bill OCR</h2>
+      <h2>Restaurant Bill OCR</h2>
 
       <input type="file" accept="image/*" onChange={handleImageChange} />
       <br /><br />
@@ -95,10 +95,10 @@ function App() {
         {isProcessing ? 'Processing...' : 'Extract Text'}
       </button>
 
-      <h3>📝 Raw OCR Output</h3>
+      <h3>Raw OCR Output</h3>
       <textarea rows="8" value={rawText} readOnly></textarea>
 
-      <h3>📊 Structured Data</h3>
+      <h3>Structured Data</h3>
       <pre>{JSON.stringify(structuredData, null, 2)}</pre>
     </div>
   );
